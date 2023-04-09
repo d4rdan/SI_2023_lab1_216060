@@ -1,0 +1,46 @@
+4.mkdir SI_2023_lab1_216060
+  cd SI_2023_lab1_216060
+  git init
+5.git remote add origin https://github.com/d4rdan/SI_2023_lab1_216060 
+6.nano README.md
+  git add .
+  git commit -m "Initial Commit"
+7.vim SILab1.java
+  git add SILab1.java	
+  git commit -m "Add Java file"
+8.git push --set-upstream origin master
+9.git checkout -b bug1
+  git checkout master
+  git checkout -b bug2
+  git checkout master
+  git checkout -b bug3
+  git checkout master
+10.git checkout bug1
+11.vim SILab1.java
+   git commit -m "Fix wrong loop for reading"
+   git add .
+12.git checkout bug2
+13.vim SILab1.java
+   git add .
+   git commit -m "Fix wrong condition in filterOddNumbers"
+14.git checkout bug3
+15.vim SILab1.java
+   git add .
+   git commit -m "Fix method sumEvenNumbers"
+16.git push --all origin
+17.git checkout master
+18.git merge bug1(no issue happened here)
+19.git push --all origin
+20.git merge bug2(no issue happened here)
+21.git push --all origin
+22.git checkout bug3
+23.git rebase master
+24.git checkout master
+25.git merge bug3(i had trouble synchronizing it, so had to do it with --force, the strategy is called recursive merging).
+26.git push --all origin --force(had to use force)
+27.git add logs.txt
+   git add 216060.txt
+   git commit -m "Final commit"
+28.git push --all origin
+
+
